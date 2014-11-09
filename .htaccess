@@ -1,0 +1,13 @@
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1&page=$2
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1&page=$2&subpage=$3
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1&page=$2&subpage=$3&content=$4
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1&page=$2&subpage=$3&content=$4&action=$5
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1&page=$2&subpage=$3&content=$4&action=$5&naction=$6
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)([/]?)$ index.php?mode=$1&page=$2&subpage=$3&content=$4&action=$5&naction=$6&naction2=$7

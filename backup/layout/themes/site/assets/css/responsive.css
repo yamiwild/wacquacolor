@@ -1,0 +1,38 @@
+﻿
+/* START DESKTOP MIN*/
+@media screen and (min-width: 930px) and (max-width: 1024px){
+
+
+
+}
+/* END DESKTOP MIN*/
+
+/* START TABLET*/
+@media screen and (min-width: 700px) and (max-width: 929px){
+
+
+
+}
+/* END TABLET*/
+
+/* START TABLET MIN*/
+@media screen and (min-width: 481px) and (max-width: 699px){
+
+
+
+}
+/* END TABLET MIN*/
+
+/* START PHONE*/
+@media screen and (min-width: 240px) and (max-width: 480px){
+
+
+
+}
+/* END PHONE*/
+
+
+
+
+
+
